@@ -1,0 +1,208 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: url(../assets/hero_img_01.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    color: #ffffff;
+    margin-top: 5rem;
+}
+
+.mobile-container {
+    display: none;
+}
+
+.main-container p {
+    font-size: 2.3rem;
+}
+
+.btn {
+    height: 3.5rem;
+    width: 17rem;
+    color: #000000be;
+    background-color: #dadada; /*If gradient is not supported*/
+    background-image: linear-gradient(rgb(189, 188, 188), rgb(255, 255, 255));
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 2.2rem;
+    border: 2.25px solid white;
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.4);
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    background-color:rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    background-image: none;
+}
+
+.overlay-container-off {
+    display: none;
+}
+
+.overlay-container-on {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+#youtube-iframe {
+    height: 720px;
+    width: 1280px;
+    border: none;
+}
+
+.exit-btn {
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 31rem;
+    margin-left: 1.5rem;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(180, 35, 35, 0.815);
+    transition: transform 0.2s;
+}
+
+.exit-btn:hover {
+    background-color: rgb(201, 201, 201);
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.55);
+    border: inset;
+}
+
+.exit-btn div {
+    height: 0.3rem;
+    width: 2.85rem;
+    margin: 0.2rem;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+#line-1 {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#line-2 {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 1450px) {
+    .main-container p {
+        font-size: 2rem;
+    }
+    #youtube-iframe {
+        height: 540px;
+        width: 960px;
+    }
+
+    .exit-btn {
+        height: 3rem;
+        width: 3rem;
+        margin-bottom: 20rem;
+    }
+
+    .exit-btn div {
+        height: 0.25rem;
+        width: 2.45rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .main-container p {
+        font-size: 1.3rem;
+    }
+
+    .main-container .btn {
+        height: 3rem;
+        width: 16rem;
+    }
+
+    #youtube-iframe {
+        height: 440px;
+        width: 600px;
+    }
+}
+
+@media (max-width: 720px) {
+    html {
+        background: url(../assets/hero_img_mobile_01.jpg) no-repeat center center fixed;
+    }
+    .main-container {
+        display: none;
+    }
+    .mobile-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+        color: #ffffff;
+        margin-top: 15rem;
+        line-height: 1;
+    }
+    .mobile-container p {
+        font-size: 1.9rem;
+        opacity: 0.8;
+        line-height: 1.1;
+    }
+    .btn {
+        height: 3.6rem;
+        width: 14rem;
+        margin-top: 3rem;
+        font-size: 1.3rem;
+        color: rgba(0, 0, 0, 0.685);
+    }
+    .exit-btn {
+        height: 2.8rem;
+        width: 2.8rem;
+        margin-bottom: 7rem;
+    }
+    .exit-btn div {
+    height: 0.28rem;
+    width: 2.1rem;
+    margin: 0.2rem;
+    }
+
+    #youtube-iframe {
+        height: 250px;
+        width: 440px;
+    }
+}
