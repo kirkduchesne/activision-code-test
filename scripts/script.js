@@ -5,22 +5,6 @@ const mobileButton = document.querySelector('#mobile-btn');
 const overlay = document.querySelector('#video-overlay');
 const exitButton = document.querySelector('.exit-btn');
 
-let player;
-const onYouTubeIframeAPIReady = () => {
-    player = new YT.Player('player', {
-      height: '390',
-      width: '640',
-      videoId: 'M7lc1UVf-VE',
-      playerVars: {
-        'playsinline': 1
-      },
-      events: {
-        'onReady': onPlayerReady,
-        'onStateChange': onPlayerStateChange
-      }
-    });
-  }
-
 // Click listeneres on Learn more to bring overlay and YouTube video
 
 mainButton.addEventListener('click', () => {
