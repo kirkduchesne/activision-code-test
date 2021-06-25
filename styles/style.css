@@ -94,7 +94,7 @@ body {
     margin-left: 1.5rem;
     border-radius: 50px;
     border: none;
-    background-color: rgba(180, 35, 35, 0.815);
+    background-color: rgba(180, 35, 35, 1);
     transition: transform 0.2s;
 }
 
@@ -194,14 +194,16 @@ body {
         font-size: 1.3rem;
         color: rgba(0, 0, 0, 0.685);
     }
+    .overlay-container-on {
+        flex-direction: column;
+    }
+
     .exit-btn {
-        height: 2.8rem;
-        width: 2.8rem;
-        margin-bottom: 8rem;
+        margin: 3rem 0 0 0;
+        padding: 0;
+        background-color: rgba(180, 35, 35, 1);
     }
     .exit-btn div {
-    height: 0.28rem;
-    width: 2.1rem;
     margin: 0.2rem;
     }
 
