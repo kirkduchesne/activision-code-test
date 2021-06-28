@@ -15,7 +15,6 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    width: 100%;
 }
 
 .main-container {
@@ -164,9 +163,10 @@ body {
     }
 }
 
-@media (max-width: 720px) and (orientation: portrait) {
+@media (max-width: 812px) and (orientation: portrait) {
     html {
         background: url(../assets/hero_img_mobile_01.jpg) no-repeat center center fixed;
+        background-size: cover;
     }
     .main-container {
         display: none;
@@ -206,5 +206,11 @@ body {
     #youtube-iframe {
         height: 250px;
         width: 440px;
+    }
+}
+
+@media (max-width: 720px) and (orientation: landscape) {
+    html {
+        background-size: cover;
     }
 }
