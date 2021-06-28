@@ -6,15 +6,16 @@
 }
 
 html {
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
     background: url(../assets/hero_img_01.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
 }
 
 .main-container {
@@ -163,10 +164,10 @@ body {
     }
 }
 
-@media (max-width: 812px) and (orientation: portrait) {
-    html {
+@media (max-width: 720px) and (orientation: portrait) {
+    body {
         background: url(../assets/hero_img_mobile_01.jpg) no-repeat center center fixed;
-        background-size: 70vh;
+        background-size: cover;
     }
     .main-container {
         display: none;
@@ -209,8 +210,7 @@ body {
     }
 }
 
+@media only screen and ()
+
 @media (max-width: 720px) and (orientation: landscape) {
-    html {
-        background-size: cover;
-    }
 }
