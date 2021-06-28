@@ -95,13 +95,13 @@ body {
     border-radius: 50px;
     border: none;
     background-color: rgba(180, 35, 35, 1);
-    transition: transform 0.2s;
+    transition: transform 0.1s;
 }
 
 .exit-btn-container:hover {
     background-color: rgb(201, 201, 201);
     cursor: pointer;
-    transform: scale(1.05, 1.05);
+    transform: scale(1.03, 1.03);
     -webkit-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.55);
     box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.55);
 }
@@ -119,7 +119,7 @@ body {
     position: absolute;
     content: ' ';
     height: 33px;
-    width: 3px;
+    width: 4px;
     border-radius: 5px;
     background-color: rgb(22, 20, 20);
   }
@@ -138,16 +138,8 @@ body {
         height: 540px;
         width: 960px;
     }
-
-    .exit-btn {
-        height: 3rem;
-        width: 3rem;
-        margin-bottom: 23.5rem;
-    }
-
-    .exit-btn div {
-        height: 0.25rem;
-        width: 2.45rem;
+    .exit-btn-container {
+        margin-bottom: 23rem;
     }
 }
 
@@ -166,7 +158,7 @@ body {
         width: 600px;
     }
 
-    .exit-btn {
+    .exit-btn-container {
         margin-bottom: 18.2rem;
     }
 }
@@ -204,13 +196,10 @@ body {
         flex-direction: column;
     }
 
-    .exit-btn {
+    .exit-btn-container {
         margin: 3rem 0 0 0;
         padding: 0;
         background-color: rgba(180, 35, 35, 1);
-    }
-    .exit-btn div {
-    margin: 0.2rem;
     }
 
     #youtube-iframe {
