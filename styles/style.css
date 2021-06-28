@@ -210,6 +210,6 @@ body {
     and (device-height: 926px)
     and (-webkit-device-pixel-ratio: 3) {
         body {
-            background-size: cover;
+            background-size: contain;
         }
     }
