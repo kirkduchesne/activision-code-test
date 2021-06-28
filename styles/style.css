@@ -163,6 +163,7 @@ body {
 @media (max-width: 720px) and (orientation: portrait) {
     body {
         background: url(../assets/hero_img_mobile_01.jpg) no-repeat center center fixed;
+        background-size: cover;
     }
     .main-container {
         display: none;
